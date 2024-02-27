@@ -1,0 +1,99 @@
+$navbar-bg: #212731;
+$navbar-text: #d1d6da;
+$navbar-shadow: rgba(0, 0, 0, 0.25);
+$input-container-bg: #ffffff;
+$input-border: #e1e4e6;
+.navbar {
+  width: 100%;
+  color: $navbar-text;
+  background-color: $navbar-bg;
+  height: 64px;
+  padding: 0.8rem 0;
+
+  &__container {
+    width: 70%;
+    margin: 0 auto;
+    gap: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__input {
+    border: none;
+    border-radius: 0.8rem;
+    height: 30px;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input--container {
+    width: 16.125rem;
+    height: 37px;
+    border: 1px solid $input-border;
+    border-radius: 0.5rem;
+    background-color: $input-container-bg;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+  }
+
+  &__item {
+    color: $navbar-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    &__container {
+      width: 85%;
+    }
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .navbar {
+    &__container {
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 607px) {
+  .navbar {
+    height: auto;
+
+    &__container {
+      gap: 3rem;
+    }
+
+    &__list {
+      gap: 1rem;
+    }
+
+    &__item {
+      font-size: 1rem;
+      height: max-content;
+    }
+
+    &__input {
+      &--container {
+        height: auto;
+      }
+    }
+  }
+}

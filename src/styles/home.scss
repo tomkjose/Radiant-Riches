@@ -1,0 +1,126 @@
+$title-text: #2c384a;
+$header-text: #4b5665;
+$info-border: #e1e4e6;
+$breadcrumb-text: #5c6874;
+$home-bg: #fbfcfd;
+.home {
+  width: 100%;
+  background-color: $home-bg;
+
+  &__header {
+    padding-top: 0.625rem;
+    width: 100%;
+  }
+
+  &__container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1.33px solid $info-border;
+    border-bottom: 1.33px solid $info-border;
+    padding: 0.6875rem 0;
+    &--container {
+      display: flex;
+      gap: 9px;
+    }
+  }
+
+  &__lastupdate {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $header-text;
+    line-height: 20px;
+  }
+
+  &__disclosure {
+    display: flex;
+    font-size: 0.875rem;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 12px;
+    color: $header-text;
+    line-height: 20px;
+  }
+
+  &__title {
+    padding: 13px 0;
+    font-size: 3rem;
+    line-height: 60px;
+    font-weight: 400;
+    color: $title-text;
+  }
+
+  &__filter {
+    border: none;
+    font-size: 0.875rem;
+    color: $header-text;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    margin: 15px 0;
+    gap: 3.5rem;
+    padding-left: 1rem;
+  }
+
+  &__item {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: $header-text;
+  }
+
+  &__breadcrumb {
+    color: $breadcrumb-text;
+    display: flex;
+    padding: 1rem 0;
+    font-size: 14px;
+    &--icon {
+      padding: 0 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .home {
+    &__title {
+      font-size: 2.8rem;
+    }
+
+    &__menu {
+      gap: 2.6rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .home {
+    &__container {
+      width: 90%;
+    }
+    &__title {
+      line-height: 40px;
+    }
+    &__menu {
+      gap: 2rem;
+    }
+  }
+
+  .tick_icon {
+    width: 1.4rem;
+  }
+
+  .info_icon {
+    width: 1.4rem;
+  }
+}
