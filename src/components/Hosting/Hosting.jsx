@@ -196,35 +196,32 @@ function Hosting() {
                 <p className="hosting__subtitle">Why we love it</p>
                 <div className="hosting__features">
                   <div className="hosting__points">
-                    <div className="hosting__points--number">
-                      <img
-                        src="./images/right_icon.png"
-                        alt="right_icon"
-                        className="right_icon"
-                      />
-                    </div>
+                    <img
+                      src="./images/right_icon.png"
+                      alt="right_icon"
+                      className="right_icon"
+                    />
+
                     <div className="hosting__points--feature">
                       Documentation
                     </div>
                   </div>
                   <div className="hosting__points">
-                    <div className="hosting__points--number">
-                      <img
-                        src="./images/right_icon.png"
-                        alt="right_icon"
-                        className="right_icon"
-                      />
-                    </div>
+                    <img
+                      src="./images/right_icon.png"
+                      alt="right_icon"
+                      className="right_icon"
+                    />
+
                     <div className="hosting__points--feature">Easy Use</div>
                   </div>
                   <div className="hosting__points">
-                    <div className="hosting__points--number">
-                      <img
-                        src="./images/right_icon.png"
-                        alt="right_icon"
-                        className="right_icon"
-                      />
-                    </div>
+                    <img
+                      src="./images/right_icon.png"
+                      alt="right_icon"
+                      className="right_icon"
+                    />
+
                     <div className="hosting__points--feature">Out of box</div>
                   </div>
                 </div>
